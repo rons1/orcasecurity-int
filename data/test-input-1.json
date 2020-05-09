@@ -1,0 +1,74 @@
+{
+    "vms": [
+        {
+            "vm_id": "vm-111",
+            "name": "jira_server",
+            "tags": [
+                "ci"
+            ]
+        },
+        {
+            "vm_id": "vm-222",
+            "name": "bastion",
+            "tags": [
+                "dev"
+            ]
+        },
+        {
+            "vm_id": "vm-333",
+            "name": "bastion",
+            "tags": [
+                "a"
+            ]
+        },
+        {
+            "vm_id": "vm-444",
+            "name": "bastion",
+            "tags": [
+                "b"
+            ]
+        },
+        {
+            "vm_id": "vm-555",
+            "name": "bastion",
+            "tags": [
+                "b", "c"
+            ]
+        },
+        {
+            "vm_id": "vm-666",
+            "name": "bastion",
+            "tags": [
+                "c"
+            ]
+        }
+    ],
+    "fw_rules": [
+        {
+            "fw_id": "fw-1111",
+            "source_tag": "ci",
+            "dest_tag": "dev"
+        },
+        {
+            "fw_id": "fw-2222",
+            "source_tag": "b",
+            "dest_tag": "a"
+        },
+        {
+            "fw_id": "fw-3333",
+            "source_tag": "a",
+            "dest_tag": "b"
+        },
+        {
+            "fw_id": "fw-4444",
+            "source_tag": "c",
+            "dest_tag": "b"
+        },
+        {
+            "fw_id": "fw-5555",
+            "source_tag": "b",
+            "dest_tag": "b"
+        }
+
+    ]
+}
